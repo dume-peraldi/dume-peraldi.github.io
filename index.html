@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henry Ko</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- <div class="header-content">
+        </div> -->
+        <h1>Henry Ko</h1>
+        <h2>technical blog</h2>
+        <br>
+        <a href="index.html" class="about-me-link">Home</a>
+        &nbsp; &nbsp;
+        <a href="about/about.html" class="about-me-link">About Me</a>
+        &nbsp; &nbsp;
+        <a href="non-technical/non-technical.html" class="about-me-link">non-technical</a>
+    </header>
+    <main>
+        <img src="snow.png" alt="Image of me" class="profile-image">
+        <br>
+        <div class="profile-text">Hi, I'm interested in performance and efficiency in ML.<br> 
+            <br>
+            I'm currently an undergrad at UC Berkeley.
+            <br>
+            <br><br>
+            <br><br>
+        </div>
+        <div class="post">
+            <div>
+                <h2 class="post-title"><a href="posts/nsa_tpu/nsa_tpu.html">Optimizing NSA for TPUs - Kernel Worklog</a></h2>
+                <p class="post-description">I enjoyed reading DeepSeek's NSA and I thought it would be an interesting challenge to implement and optimize it for TPUs. I put together a colab notebook containing the vectorized JAX baseline of NSA, Pallas kernels, and profiling code.
+                </p>
+            </div>
+            <img class="post-image" src="posts/nsa_tpu/images/kernel_vis_highres.png" alt="sample post img" style="width: auto; height: 150px;">
+        </div>
+        <br>
+        <div class="post">
+            <div>
+                <h2 class="post-title"><a href="posts/tpu/tpu.html">TPU Deep Dive</a></h2>
+                <p class="post-description">I've been working with TPUs a lot recently and it's fun to see how they had such different design philosophies compared to GPUs. The main strongpoint for TPUs is in their scalability. This is achieved through a co-design of both the hardware side (e.g. energy efficiency and modularity) and the software side (e.g. XLA compiler).
+                </p>
+            </div>
+            <img class="post-image" src="posts/tpu/images/rack_ocs.png" alt="sample post img" style="width: auto; height: 150px;">
+        </div>
+        <div class="post">
+            <div>
+                <h2 class="post-title"><a href="posts/cuda/cuda.html">Introduction to CUDA Programming With GPU Puzzles</a></h2>
+                <p class="post-description">This guide will be a hands-on approach to getting your feet wet with CUDA Programming through solving Sasha Rush's GPU Puzzles in CUDA. We’ll cover the basics up to shared memory, focusing on foundational concepts of CUDA and NVIDIA GPUs. No base of GPU programming required, we’ll introduce all necessary ideas as we go.
+                </p>
+            </div>
+            <img class="post-image" src="posts/cuda/images/thumbnail.png" alt="sample post img" style="width: 300px; height: 150px;">
+        </div>
+        <div class="post">
+            <div>
+                <h2 class="post-title"><a href="posts/profiling/profiling.html">Navigating NVIDIA Nsight Systems for Efficient Profiling</a></h2>
+                <p class="post-description">I had my first experience with optimization this summer by making my lab's codebase for protein structure estimation 70% faster. And Nsight Systems was at the core of making that possible. This guide is a practical tutorial on how to use Nsight Systems where we'll use Karpathy's nanoGPT repo as an example.
+                </p>
+            </div>
+            <img class="post-image" src="posts/profiling/images/thumbnail_1.png" alt="sample post img" style="width: 300px; height: 150px;">
+        </div>
+        <br>
+        <div class="post">
+            <div>
+                <h2 class="post-title"><a href="posts/mpt_pt2/mpt_pt2.html">Mixed Precision Training - Part 2: Evolution of FP8</a></h2>
+                <p class="post-description">In our last post, we saw the jump from FP32 to FP16, but can we go even lower? Let’s dive into the next frontier: FP8. We’ll be deep-diving into two significant papers that made FP8 training possible. The first introduced the hybrid FP8 format and the second refined it into a generalizable IEEE-754 floating point capable of training models as large as GPT-175B with minimal performance loss.
+                </p>
+            </div>
+            <img class="post-image" src="posts/mpt_pt2/images/thumbnail.png" alt="sample post img" style="width: auto; height: 200px;">
+        </div>
+        <br>
+        <div class="post">
+            <div>
+                <h2 class="post-title"><a href="posts/mpt_pt1/mpt_part1.html">Mixed Precision Training - Part 1: Introduction</a></h2>
+                <p class="post-description">NVIDIA's latest GPU, the Blackwell series, has taken another leap forward with its support for FP4 representations. But where did this idea of leveraging lower precision formats for efficient ML all start? What are the techniques used to amend underflows/overflows despite using reduced precision formats? This series on Mixed Precision Training explores the origins and evolutions of this approach, starting from the OG Mixed Precision Training paper released way back in 2017.</p>
+            </div>
+            <img class="post-image" src="posts/mpt_pt1/images/FP_underflow.png" alt="sample post img" style="width: auto; height: 200px;">
+        </div>
+        <div class="post">
+            <div>
+                <h2 class="post-title"><a href="posts/moe_overview/moe_overview.html">Mixture of Experts(MoE) Overview</a></h2>
+                <p class="post-description">Key ideas used in the MoEs are sparsity, parallelism, and meta-learning. This technique has opened doors for scalable model training and has become a standard practice when building modern LLMs. Some examples of LLMs using MoEs include Databrick’s DBRX, Snowflake’s Arctice, xAI’s Grok and the list continues to grow as the technique improves more and more.
+                </p>
+            </div>
+            <img class="post-image" src="posts/moe_overview/images/MoE_block_and_gating_network.png" alt="sample post img" style="width: auto; height: 250px;">
+        </div>
+        
+    </main>
+</body>
+</html>

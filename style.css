@@ -1,0 +1,283 @@
+/* @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"); */
+
+@font-face {
+    font-family: 'NIXGONM-Vb';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'NIXGONM-Vb', sans-serif;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+header {
+    background-color: #FFFFFF;
+    color: #413E3E;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    /* position: relative; */
+}
+.header-content {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: right;
+}
+div.heading {
+    font-weight: bold;
+    margin-top: 4ch;
+}
+div.profile-text {
+    color: #000000;
+    font-weight: 100;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 2.0;
+}
+/* .header-content h1 {
+    margin: 0;
+    margin-right: 20px;
+} */
+main {
+    padding: 0 50px;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+}
+h1, h2 {
+    margin: 0;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+h3 {
+    /* margin-top: 0;
+    color: #413E3E; */
+    color: #000000;
+    font-weight: 1000;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    /* margin-top: 100px; */
+}
+li {
+    margin-bottom: 10px;
+}
+/* p {
+    font-size: 20px; 
+} */
+
+/* .korean-font,
+.korean-font h1,
+.korean-font h2,
+.korean-font h3,
+.korean-font p,
+.korean-font li {
+    font-family: 'Pretendard', sans-serif !important;
+    font-weight: 300;
+} */
+.korean-font {
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 300;
+}
+.korean-font h1{
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 200;
+}
+.korean-font h2{
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 300;
+}
+
+.about-me-link {
+    position: absolute;
+    /* top:20px; */
+    /* left: 350px; */
+    /* color: #413E3E; */
+    color: #000000;
+    text-decoration: none;
+}
+.profile-image {
+    float: right;
+    margin-left: 90px;
+    width: 200px;
+    height: auto;
+}
+.post {
+    margin-bottom: 20px;
+    display: flex;
+}
+.post-title {
+    color: #413E3E;
+    font-size: 24px;
+    /* font-weight: bold; */
+    margin-bottom: 5px;
+}
+.post-description {
+    font-size: 16px;
+    /* color: #666; */
+    /* color: #413E3E; */
+}
+.post-image {
+    margin-left: 20px;
+    /* width: 200px;
+    height: auto; */
+    width: auto;
+    height: 200px
+}
+/* a:link, a:visited {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: #b10f0f;
+} */
+a:link, a:visited {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+}
+a::after {
+    content: ''; /* No content, just the underline */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; /* 20px below the text */
+    height: 1px; /* Thickness of the underline */
+    background-color: #ff6800; /* Color of the underline */
+    /* /* transition: background-color 0.3s; */
+}
+
+.date {
+    /* position: absolute; */
+    top: 110px;
+    font-size: 15px;
+    color: #888;
+    font-style: italic;
+}
+.bold-light {
+    font-weight: 300;
+}
+.bold-regular {
+    font-weight: 400;
+}
+.bold-medium {
+    font-weight: 500;
+}
+.bold-semi-bold {
+    font-weight: 600;
+}
+.bold-bold {
+    font-weight: 700;
+}
+.bold-extra-bold {
+    font-weight: 1000;
+}
+::selection {
+    background-color: #fff2cf;
+    color: #000000;
+}
+/* original */
+/* .math-indent {
+    display: inline-block;
+    margin-left: 13em;
+    font-size: 1.2em;
+} */
+.math-indent {
+    display: block;          /* full-width block element */
+    text-align: center;      /* center the math */
+    font-size: 1.2em;        /* make math larger (1.5x surrounding text) */
+    margin: 1em 0;           /* add vertical breathing room */
+}
+
+/* .math-indent .MathJax_Display {
+    font-size: 4.0em;
+} */
+code, pre code {
+    font-family: 'Fira Code', 'Courier New', monospace;
+    /* font-feature-settings: "liga" 1;
+    font-variant-ligatures: normal; */
+}
+/* code:not([class*="language-"]) {
+    background-color: #000;
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+} */
+code:not([class*="language-"]) {
+    background-color: #fff2cf; 
+    color: #000000; 
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #ff6800; 
+}
+.korean-text {
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 300;
+}
+.responsive-image-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.responsive-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+@media (min-width: 700px) {
+    .responsive-image {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+/* <style>
+.responsive-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .responsive-image img {
+        max-width: 60%;
+    }
+}
+</style> */
+
+/* mobile stuff */
+@media screen and (max-width: 768px) {
+    div.profile-text {
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: left;  
+        padding: 0 10px;   
+    }
+
+    .post {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .post-image {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 300px;
+        margin-top: 10px;
+    }
+    
+    .profile-image {
+        max-width: 100%;
+        height: auto;
+    }
+}
