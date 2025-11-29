@@ -12,6 +12,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    overflow-x: hidden;   
     /* display: flex; */
     /* flex-direction: column; */
     /* align-items: center; */
@@ -286,31 +287,31 @@ code:not([class*="language-"]) {
    Photo essay layout
    ============================ */
 
-.photo-post .photo-intro {
-    max-width: 42rem;           /* narrower block for intro */
-    margin: 0 auto 3rem auto;   /* center + space below */
-    text-align: left;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-.photo-post p {
-    font-size: 0.95rem;         /* slightly smaller body text */
-    line-height: 1.6;
-}
-
+/* headings above each photo */
 .photo-post .heading {
-    margin-top: 3rem;           /* more breathing room above each section */
+    margin-top: 4rem;    /* closer to previous image */
+    font-size: 0.95rem;
 }
 
+/* make the <hr> tight to the heading and image */
+.photo-post hr {
+    margin: 0.15rem 0 0.4rem 0;
+}
+
+/* images: full-bleed across the viewport, compact vertically */
 .photo-post .responsive-image-container {
     text-align: center;
-    margin: 1.5rem 0 2.5rem 0;  /* space around images */
+    margin: 0.4rem 0 1.0rem 0;
+    width: 100vw;                          /* span entire viewport width */
+    max-width: none;                       /* override the 900px limit */
+    margin-left: calc(50% - 50vw);         /* pull to left edge */
+    margin-right: calc(50% - 50vw);        /* pull to right edge */
+    padding: 0;                            /* no extra padding */
 }
 
 .photo-post .responsive-image {
     display: block;
-    max-width: 100%;            /* take the full text width */
-    width: 100%;
+    width: 97%;
+    max-width: none;                       /* don't shrink back to column */
     height: auto;
 }
