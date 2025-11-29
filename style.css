@@ -281,3 +281,36 @@ code:not([class*="language-"]) {
         height: auto;
     }
 }
+
+/* ============================
+   Photo essay layout
+   ============================ */
+
+.photo-post .photo-intro {
+    max-width: 42rem;           /* narrower block for intro */
+    margin: 0 auto 3rem auto;   /* center + space below */
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.photo-post p {
+    font-size: 0.95rem;         /* slightly smaller body text */
+    line-height: 1.6;
+}
+
+.photo-post .heading {
+    margin-top: 3rem;           /* more breathing room above each section */
+}
+
+.photo-post .responsive-image-container {
+    text-align: center;
+    margin: 1.5rem 0 2.5rem 0;  /* space around images */
+}
+
+.photo-post .responsive-image {
+    display: block;
+    max-width: 100%;            /* take the full text width */
+    width: 100%;
+    height: auto;
+}
