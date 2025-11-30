@@ -11,86 +11,85 @@
         <!-- <div class="header-content">
         </div> -->
         <h1>Dume Peraldi</h1>
-        <h2>photographe</h2>
-        <br>
-        <a href="index.html" class="about-me-link">Home</a>
+        <span class="date">Photographe</span>
+        <br><br>
+        <a href="index.html" class="about-me-link">Collections</a>
         &nbsp; &nbsp;
-        <a href="about/about.html" class="about-me-link">About Me</a>
+        <a href="non-technical/non-technical.html" class="about-me-link">Carnet de Voyage</a>
         &nbsp; &nbsp;
-        <a href="non-technical/non-technical.html" class="about-me-link">non-technical</a>
+        <a href="about/about.html" class="about-me-link">Services et Contact</a>
     </header>
-    <main>
-        <img src="snow.png" alt="Image of me" class="profile-image">
-        <br>
-        <div class="profile-text">Regarder c’est aussi écouter et mettre tous ses sens en éveil pour retranscrire ce que l’on voit
-et ce que l’on ressent. Photographier c’est interpréter le réel en y apportant ces modifications
-qui naissent de l’intention. Dans tous les domaines de la prise de vue je cherche donc
-l’échange et la compréhension avec les individus ou le monde qui m’entoure.
-Je vous invite donc à voir ce monde intérieur tourné vers l’extérieur, et à me laisser vos
-impressions.
-            <br>
-            <br><br>
-            <br><br>
+<main>
+    <!-- Intro section: big image on left, text on right -->
+    <section class="intro">
+        <img src="profile.png"
+             alt="Portrait de Dume Peraldi"
+             class="profile-image">
+
+        <div class="intro-text">
+            <p class="profile-text">
+                Photographe français basé à Bastelicaccia, en Corse. <br>
+                Ma carrière a débuté il y a 40 ans par le reportage, avant d’évoluer vers une photographie plus artistique et personnelle pendant trois décennies.
+            </p>
+            <p class="profile-text">
+                J’ai enseigné la photographie pendant 8 ans à Paris, formant plus de 5&nbsp;000 élèves. Ces deux dernières années, j’ai renoué avec la matérialité du tirage en développant une expertise en tirage argentique professionnel.
+            </p>
+            <p class="profile-text">
+                Pour 2026, j’ai choisi de revenir définitivement sur mes terres, en Corse.
+                        <p class="profile-text">
+                Je continue d’offrir mes services, notamment pour l’enseignement (individuel ou groupe), la photographie/portrait professionnel et la photographie de mariage.
+            </p>
+            <p class="profile-text">
+                Pour toute demande ou simple discussion, écrivez-moi à&nbsp;: <strong>dumeperaldi@gmail.com</strong>.
+            </p>
+
         </div>
+    </section>
+
+    <!-- Blog posts: unchanged from before -->
         <div class="post">
             <div>
-                <h2 class="post-title"><a href="posts/nsa_tpu/nsa_tpu.html">Optimizing NSA for TPUs - Kernel Worklog</a></h2>
-                <p class="post-description">I enjoyed reading DeepSeek's NSA and I thought it would be an interesting challenge to implement and optimize it for TPUs. I put together a colab notebook containing the vectorized JAX baseline of NSA, Pallas kernels, and profiling code.
+                <h2 class="post-title"><a href="collections/nsa_tpu/nsa_tpu.html">Paris</a></h2>
+                <p class="post-description">Série de photos dans rues de Paris, Anneé ? vfsdilf sdlifskls dfklfsd jkljkfsldjklfs djklfsd jklfsd  jklfjsdlkjlk fsdk jlfsdj kl sdjklfs kdjlj kl. fsdjkl fsdjklf sdjklf. sjkljl
                 </p>
             </div>
-            <img class="post-image" src="posts/nsa_tpu/images/kernel_vis_highres.png" alt="sample post img" style="width: auto; height: 150px;">
-        </div>
-        <br>
-        <div class="post">
-            <div>
-                <h2 class="post-title"><a href="posts/tpu/tpu.html">TPU Deep Dive</a></h2>
-                <p class="post-description">I've been working with TPUs a lot recently and it's fun to see how they had such different design philosophies compared to GPUs. The main strongpoint for TPUs is in their scalability. This is achieved through a co-design of both the hardware side (e.g. energy efficiency and modularity) and the software side (e.g. XLA compiler).
-                </p>
-            </div>
-            <img class="post-image" src="posts/tpu/images/rack_ocs.png" alt="sample post img" style="width: auto; height: 150px;">
-        </div>
-        <div class="post">
-            <div>
-                <h2 class="post-title"><a href="posts/cuda/cuda.html">Introduction to CUDA Programming With GPU Puzzles</a></h2>
-                <p class="post-description">This guide will be a hands-on approach to getting your feet wet with CUDA Programming through solving Sasha Rush's GPU Puzzles in CUDA. We’ll cover the basics up to shared memory, focusing on foundational concepts of CUDA and NVIDIA GPUs. No base of GPU programming required, we’ll introduce all necessary ideas as we go.
-                </p>
-            </div>
-            <img class="post-image" src="posts/cuda/images/thumbnail.png" alt="sample post img" style="width: 300px; height: 150px;">
-        </div>
-        <div class="post">
-            <div>
-                <h2 class="post-title"><a href="posts/profiling/profiling.html">Navigating NVIDIA Nsight Systems for Efficient Profiling</a></h2>
-                <p class="post-description">I had my first experience with optimization this summer by making my lab's codebase for protein structure estimation 70% faster. And Nsight Systems was at the core of making that possible. This guide is a practical tutorial on how to use Nsight Systems where we'll use Karpathy's nanoGPT repo as an example.
-                </p>
-            </div>
-            <img class="post-image" src="posts/profiling/images/thumbnail_1.png" alt="sample post img" style="width: 300px; height: 150px;">
+            <img class="post-image" src="collections/nsa_tpu/images/Une_site_paristagephoto septembre_2019.jpg" alt="sample post img" style="width: auto; height: 150px;">
         </div>
         <br>
         <div class="post">
             <div>
-                <h2 class="post-title"><a href="posts/mpt_pt2/mpt_pt2.html">Mixed Precision Training - Part 2: Evolution of FP8</a></h2>
-                <p class="post-description">In our last post, we saw the jump from FP32 to FP16, but can we go even lower? Let’s dive into the next frontier: FP8. We’ll be deep-diving into two significant papers that made FP8 training possible. The first introduced the hybrid FP8 format and the second refined it into a generalizable IEEE-754 floating point capable of training models as large as GPT-175B with minimal performance loss.
+                <h2 class="post-title"><a href="collections/tpu/tpu.html">Macro</a></h2>
+                <p class="post-description">Photos Macro  vfsdilf sdlifskls dfklfsd jkljkfsldjklfs djklfsd jklfsd  jklfjsdlkjlk fsdk jlfsdj kl sdjklfs kdjlj kl. fsdjkl fsdjklf sdjklf. sjkljl
                 </p>
             </div>
-            <img class="post-image" src="posts/mpt_pt2/images/thumbnail.png" alt="sample post img" style="width: auto; height: 200px;">
+            <img class="post-image" src="collections/tpu/images/macro_juin14_0591.JPG" alt="sample post img" style="width: auto; height: 150px;">
+        </div>
+        <div class="post">
+            <div>
+                <h2 class="post-title"><a href="collections/cuda/cuda.html">Mexique, Série panoramiques</a></h2>
+                <p class="post-description">Mexique, circa 1990. Une exploration du paysage et de la scène de rue en format panoramique. Traitées en noir et blanc contrasté, ces photographies jouent sur les lignes et la lumière pour offrir une vision cinématique et immersive de la vie locale.
+                </p>
+            </div>
+            <img class="post-image" src="collections/cuda/images/pano102.jpg" alt="sample post img" style="width: 300px; height: 150px;">
+        </div>
+        <div class="post">
+            <div>
+                <h2 class="post-title"><a href="collections/moe_overview/moe_overview.html">Japon série</a></h2>
+                <p class="post-description">Série de photos pris au Japon , 2025g vfsdilf sdlifskls dfklsdj kl fd skjlfdsjlkf  sdjkl fkd sjljk lfsdjklf jlkfsjk lfskjl 2025g vfsdilf sdlifskls dfklfsd jkljkfsldjklfs djklfsd jklfsd  jklfjsdlkjlk fsdk jlfsdj kl sdjklfs kdjlj kl. fsdjkl fsdjklf sdjklf. sjkljl kfsdjk lfd skjlfdsjlkf  sdjkl fkd sjljk lfsdjklf jlkfsjk lfskjl 
+                </p> 
+            </div>
+            <img class="post-image" src="collections/moe_overview/images/japon_0636.jpg" alt="sample post img" style="width: auto; height: 100;">
+        </div>
+        <div class="post">
+            <div>
+                <h2 class="post-title"><a href="collections/mpt_pt2/mpt_pt2.html">Légume, Série</a></h2>
+                <p class="post-description"> Collection 2012 Légume  vfsdilf sdlifskls dfklfsd jkljkfsldjklfs djklfsd jklfsd  jklfjsdlkjlk fsdk jlfsdj kl sdjklfs kdjlj kl. fsdjkl fsdjklf sdjklf. sjkljl  vfsdilf sdlifskls dfklfsd jkljkfsldjklfs djklfsd jklfsd  jklfjsdlkjlk fsdk jlfsdj kl sdjklfs kdjlj kl. fsdjkl fsdjklf sdjklf. sjkljl
+                </p>
+            </div>
+            <img class="post-image" src="collections/mpt_pt2/images/figues20.jpg" alt="sample post img" style="width: auto; height: 200px;">
         </div>
         <br>
-        <div class="post">
-            <div>
-                <h2 class="post-title"><a href="posts/mpt_pt1/mpt_part1.html">Mixed Precision Training - Part 1: Introduction</a></h2>
-                <p class="post-description">NVIDIA's latest GPU, the Blackwell series, has taken another leap forward with its support for FP4 representations. But where did this idea of leveraging lower precision formats for efficient ML all start? What are the techniques used to amend underflows/overflows despite using reduced precision formats? This series on Mixed Precision Training explores the origins and evolutions of this approach, starting from the OG Mixed Precision Training paper released way back in 2017.</p>
-            </div>
-            <img class="post-image" src="posts/mpt_pt1/images/FP_underflow.png" alt="sample post img" style="width: auto; height: 200px;">
-        </div>
-        <div class="post">
-            <div>
-                <h2 class="post-title"><a href="posts/moe_overview/moe_overview.html">Mixture of Experts(MoE) Overview</a></h2>
-                <p class="post-description">Key ideas used in the MoEs are sparsity, parallelism, and meta-learning. This technique has opened doors for scalable model training and has become a standard practice when building modern LLMs. Some examples of LLMs using MoEs include Databrick’s DBRX, Snowflake’s Arctice, xAI’s Grok and the list continues to grow as the technique improves more and more.
-                </p>
-            </div>
-            <img class="post-image" src="posts/moe_overview/images/MoE_block_and_gating_network.png" alt="sample post img" style="width: auto; height: 250px;">
-        </div>
-        
+        <br>
     </main>
 </body>
 </html>
