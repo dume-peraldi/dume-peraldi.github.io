@@ -28,6 +28,126 @@ header {
     margin-bottom: 20px;
     /* position: relative; */
 }
+.nav-hero {
+    padding: 0;
+    margin-bottom: 28px;
+}
+.nav-hero-media {
+    position: relative;
+}
+.nav-hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.nav-hero-links {
+    position: absolute;
+    left: 50%;
+    bottom: 16px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 20px;
+    padding: 10px 18px;
+    max-width: calc(100% - 40px);
+    background: rgba(0, 0, 0, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+    backdrop-filter: blur(6px);
+}
+.nav-hero .about-me-link {
+    position: static;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.2;
+}
+.nav-hero .about-me-link::after {
+    bottom: -6px;
+}
+@media (max-width: 720px) {
+    .nav-hero-links {
+        bottom: 12px;
+        padding: 8px 12px;
+        gap: 8px 12px;
+    }
+    .nav-hero .about-me-link {
+        font-size: 14px;
+    }
+}
+.service-page {
+    max-width: 980px;
+}
+.service-card {
+    border: 1px solid #b7b7b7;
+    border-radius: 18px;
+    padding: 24px 28px;
+    margin: 24px 0;
+    background: #ffffff;
+}
+.service-card-header {
+    margin-bottom: 14px;
+}
+.service-card-title {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+.service-card-tagline {
+    margin: 0 0 6px;
+    font-weight: 500;
+    color: #444444;
+}
+.service-card-label {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #666666;
+    font-weight: 600;
+}
+.service-card-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.6fr);
+    gap: 16px 32px;
+    align-items: start;
+}
+.service-card-text p {
+    margin: 0 0 10px;
+}
+.service-card-list {
+    margin: 8px 0 0;
+    padding: 0;
+    list-style: none;
+}
+.service-card-list li {
+    margin-bottom: 6px;
+}
+.service-card-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    gap: 8px;
+}
+.service-price {
+    font-size: 22px;
+    font-weight: 600;
+    color: #222222;
+}
+.service-price-note {
+    font-size: 14px;
+    color: #555555;
+}
+@media (max-width: 720px) {
+    .service-card-body {
+        grid-template-columns: 1fr;
+    }
+    .service-card-price {
+        align-items: flex-start;
+        text-align: left;
+    }
+}
 .header-content {
     /* display: flex;
     align-items: center;
