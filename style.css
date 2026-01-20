@@ -85,6 +85,17 @@ header {
     margin: 24px 0;
     background: #ffffff;
 }
+.service-figure {
+    margin: 12px 0 24px;
+    text-align: center;
+}
+.service-image {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 .service-card-header {
     margin-bottom: 14px;
 }
@@ -262,6 +273,144 @@ header {
     flex: 1;
     height: 1px;
     background: #d7d7d7;
+}
+.subpage-nav {
+    padding: 24px 50px 12px;
+    text-align: center;
+}
+.subpage-nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 22px;
+}
+.subpage-nav .about-me-link {
+    position: static;
+    color: #000000;
+}
+.blog-article {
+    max-width: 860px;
+}
+.blog-article-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 16px;
+}
+.blog-article-lead {
+    margin: 0 0 20px;
+    color: #444444;
+}
+.blog-article-section {
+    margin: 24px 0 0;
+}
+.blog-article-section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+.blog-article-list {
+    margin: 0 0 16px;
+    padding-left: 22px;
+    list-style: disc;
+}
+.blog-article-list li {
+    margin-bottom: 10px;
+}
+.blog-article-image {
+    margin: 24px auto;
+    text-align: center;
+}
+.blog-article-image img {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.blog-article-note {
+    margin-top: 24px;
+    color: #444444;
+}
+@media (max-width: 720px) {
+    .subpage-nav {
+        padding: 18px 20px 6px;
+    }
+    .blog-article-title {
+        font-size: 24px;
+    }
+    .blog-article-image img {
+        max-width: 100%;
+    }
+}
+.contact-page {
+    max-width: 980px;
+}
+.contact-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.45fr) minmax(0, 0.55fr);
+    gap: 32px;
+    align-items: start;
+}
+.contact-photo-wrap {
+    display: flex;
+    justify-content: center;
+}
+.contact-photo {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 16px;
+}
+.contact-card {
+    border: 1px solid #d0d0d0;
+    border-radius: 18px;
+    padding: 24px 28px;
+    background: #ffffff;
+}
+.contact-title {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0 0 16px;
+}
+.contact-list {
+    margin: 0 0 12px;
+    padding: 0;
+    list-style: none;
+}
+.contact-list li {
+    margin-bottom: 8px;
+}
+.contact-label {
+    font-weight: 600;
+    margin-right: 6px;
+}
+.contact-location {
+    margin: 0;
+    color: #444444;
+}
+.contact-divider {
+    height: 1px;
+    background: #e0e0e0;
+    margin: 20px 0;
+}
+.contact-subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+.contact-hints {
+    margin: 0;
+    padding-left: 18px;
+}
+.contact-hints li {
+    margin-bottom: 8px;
+}
+@media (max-width: 900px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
 }
 .blog-posts .post {
     align-items: center;
