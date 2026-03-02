@@ -1,7 +1,5 @@
-# Guide ultra-pratique: ajouter une galerie ou un article blog
+# Guide : ajouter une galerie ou un article blog
 
-Ce guide est fait pour une personne non technique.
-Tu n'as presque rien à coder: tu crées des dossiers, tu ajoutes des images, tu donnes un prompt à l'agent.
 
 ## 1) Avant de commencer (1 minute)
 
