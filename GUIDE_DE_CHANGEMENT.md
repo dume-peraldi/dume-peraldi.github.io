@@ -86,7 +86,7 @@ Actions demandées (déterministes):
 1) Crée le fichier galleries/[NOM_DOSSIER]/[NOM_DOSSIER].html en copiant la structure d'une galerie existante.
 2) Dans ce fichier, garde le même header/nav que les autres galeries.
 3) Génère les blocs <img> dans l'ordre alphanumérique des fichiers présents dans galleries/[NOM_DOSSIER]/images/.
-4) Ajoute un nouveau bloc <div class="post"> à la fin de la liste dans index.html.
+4) Ajoute un nouveau bloc <div class="post"> au début de la liste dans index.html.
 5) Dans ce bloc:
    - src image = [NOM_IMAGE_COUVERTURE]
    - lien = galleries/[NOM_DOSSIER]/[NOM_DOSSIER].html
@@ -239,9 +239,6 @@ Actions demandées (déterministes):
 2. `Ctrl + clic` sur `index.html` (ou clic droit).
 3. Clique `Ouvrir avec Live Server` (`Open with Live Server`).
 
-Alternative si tu ne vois pas l'option:
-1. Clique le bouton `Aller en direct` (`Go Live`) en bas à droite de VS Code.
-2. Puis ouvre `index.html`.
 
 ### Étape B - Vérifier dans le navigateur
 
@@ -262,15 +259,6 @@ Alternative si tu ne vois pas l'option:
 3. Redonne le prompt à l'agent en précisant ce qui ne va pas.
 4. Relance le check avec `Ouvrir avec Live Server`.
 
-## 8) Mini check-list "prêt à push"
-
-1. Les fichiers/dossiers sont au bon endroit.
-2. Les noms de fichiers sont corrects et sans espaces.
-3. La nouvelle carte est visible sur la bonne page.
-4. Le clic ouvre la bonne page.
-5. Les images se chargent.
-6. La navigation fonctionne.
-7. Seulement après ça: passer à `commit` puis `push`.
 
 ## 9) Commit + Push (méthode terminal, plus simple)
 
